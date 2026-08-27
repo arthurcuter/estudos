@@ -1,0 +1,1 @@
+É comum que códigos-fonte em Java, os arquivos .java, fiquem na pasta "src" (source), e os Bytecodes, arquivos .class, estejam em pastas como "out" ou "bin" (não significam a mesma coisa em todo projeto). Entretanto isso pode mudar. São convenções, não regras do Java. 
