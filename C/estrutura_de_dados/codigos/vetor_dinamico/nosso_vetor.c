@@ -5,7 +5,7 @@
 
 #define FRACASSO 0
 #define SUCESSO 1
-#define CAPACIDADE_MININA 10
+#define CAPACIDADE_MINIMA 10
 
 
 typedef struct {
@@ -262,7 +262,7 @@ int remove_elemento(t_vetor *p_vetor, int *p_quem_sai) {
     *p_quem_sai = p_vetor->v[p_vetor->ocupacao];
 
 
-    if (p_vetor->capacidade >= CAPACIDADE_MININA * 2 &&
+    if (p_vetor->capacidade >= CAPACIDADE_MINIMA * 2 &&
         p_vetor->ocupacao <= p_vetor->capacidade / 4)
 
 
