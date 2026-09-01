@@ -4,7 +4,7 @@
 | Alt     | Option  |
 | Ctrl    | Command |
 
-- Ctrl + Shift + F10
+- Shift + F10
 	Executa o código;
 - Ctrl + D
 	Duplica a linha;

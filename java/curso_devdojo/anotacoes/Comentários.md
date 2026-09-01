@@ -17,6 +17,6 @@ Existem diversos tipos de comentários em Java, e são usados para comentar algo
 		* Isso é um comentário <b>javadoc</b>
 		*/
 		
-	Ele pode ser visualizado de forma renderizada usando Ctrl + Alt + Q.
+	Ele pode ser visualizado de forma renderizada usando Ctrl + Q no Windows e F1 no macOS.
 
 Tirando o comentário Javadoc, não é recomendado comentar muito o código, e deve se evitar ao máximo, baseado nas normas do Código Limpo. 

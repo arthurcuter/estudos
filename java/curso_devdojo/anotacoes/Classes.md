@@ -36,7 +36,7 @@ No programa principal:
 
 	p1.comer();
 
-A classe Pessoa é uma classe de domínio, por que ela mapeia um conceito real do negócio. As classes que representam dados (nome, idade, etc.) e comportamentos (como comer de uma Pessoa), são classes de domínio, e as que realizam operações que não pertencem a apenas uma entidade, são chamadas de classes de serviço, e classes utilitárias são classes que fornecem funções de auxilio genéricas, como "Math.max(10, 20);".
+A classe Pessoa é uma classe de domínio, porque ela mapeia um conceito real do negócio. As classes que representam dados (nome, idade, etc.) e comportamentos (como comer de uma Pessoa), são classes de domínio, e as que realizam operações que não pertencem a apenas uma entidade, são chamadas de classes de serviço, e classes utilitárias são classes que fornecem funções de auxilio genéricas, como "Math.max(10, 20);".
 
 Os atributos dentro de uma classe não precisam ser inicializados, pois vem com valores padrões, sendo eles: 
 - 0 para valores inteiros
@@ -44,6 +44,7 @@ Os atributos dentro de uma classe não precisam ser inicializados, pois vem com 
 - '\u0000' (unicode) para valores char
 - null para valores de referência (Pessoa, String, etc.)
 - false para valores booleanos 
+Variáveis locais ainda precisam ser inicializadas
 É possível inicializar o atributo na declaração da classe, definindo um valor inicial que irá para todos os objetos que você criar. Exemplo: 
 
 	public class Pessoa {

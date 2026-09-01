@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Classes.md",
+                "file": "Comentários.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Classes"
+              "title": "Comentários"
+            }
+          },
+          {
+            "id": "dfd2c41237f10662",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Casting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Casting"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -200,18 +214,20 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "d1af6f3696fce879",
+  "active": "dfd2c41237f10662",
   "lastOpenFiles": [
-    "Arrays Multidimensionais.md",
-    "Classes.md",
-    "Arrays.md",
-    "Break e Continue.md",
-    "Atalhos Úteis IntelliJ IDEA.md",
+    "Coesão.md",
     "Casting.md",
     "Nomenclatura de pacotes.md",
-    "Estrutura de pastas.md",
     "Compilando arquivos.md",
+    "Atalhos Úteis IntelliJ IDEA.md",
     "Comentários.md",
+    "Classes.md",
+    "Arrays.md",
+    "Arrays Multidimensionais.md",
+    "Sem título",
+    "Break e Continue.md",
+    "Estrutura de pastas.md",
     "Tipos primitivos.md"
   ]
 }

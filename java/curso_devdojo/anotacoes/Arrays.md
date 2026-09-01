@@ -11,7 +11,7 @@ ou
 
 	int[] nomeDoArray = new int[]{1, 2, 3};
 
-O primeiro índice do Array é sempre 0. Sendo assim, um Array de tamanho 3 tem os índices 0, 1 e 2. O valor que colocamos dentro do colchete diz respeito ao **tamanho** do Array, apenas. Por padrão, no Java, caso você não inicialize, valores padrões são colocados nas posições dependendo do tipo do Array.
+O primeiro índice do Array é sempre 0. Sendo assim, um Array de tamanho 3 tem os índices 0, 1 e 2. O valor que colocamos dentro do colchete diz respeito ao **tamanho** do Array, apenas. Por padrão, no Java, caso você não inicialize, valores padrões são colocados nas posições quando o objeto Array é criado, e esses valores dependem do tipo do Array.
 
 Em Java, podemos conseguir o tamanho do Array através do atributo length. Exemplo: 
 
