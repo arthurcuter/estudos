@@ -1,0 +1,1 @@
+Firewall é um sistema de segurança de redes de computadores que bloqueia certos tráfegos de Internet em uma rede.  
