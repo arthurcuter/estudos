@@ -1,0 +1,17 @@
+Nesta primeira parte, o foco é aprender a usar o Linux pelo terminal. Em servidores isso é especialmente importante porque muitas vezes não há interface gráfica, o que economiza recursos e permite administração remota com facilidade. O curso usa o Bash, e o prompt normalmente mostra usuário, hostname e diretório atual. O símbolo `$` indica usuário comum e `#` indica root. O Linux também é case-sensitive, então `ls` e `LS` são comandos diferentes.
+
+Para obter ajuda, os principais recursos são `man comando` e `comando --help`. O `man` traz uma documentação mais completa, enquanto `--help` costuma ser mais resumido. Para trocar de usuário existe o `su`; sem informar usuário, ele tenta acessar o root. Já o `sudo` executa apenas um comando com privilégios elevados, sendo mais seguro do que permanecer logado como root o tempo inteiro.
+
+O `apt` gerencia pacotes no Debian. `apt update` atualiza a lista de pacotes e versões disponíveis nos repositórios, enquanto `apt upgrade` instala as atualizações disponíveis. `apt search` procura pacotes, `apt install` instala e `apt remove` remove.
+
+No gerenciamento de usuários, `passwd` altera senhas, `useradd` cria usuários, `groupadd` cria grupos e `usermod` modifica usuários existentes. Um exemplo importante é `usermod -aG grupo usuario`, usado para adicionar um usuário a um grupo sem removê-lo dos grupos dos quais já participa.
+
+O sistema de arquivos Linux começa em `/`. Diretórios importantes incluem `/home` para as pastas dos usuários, `/root` para a home do root, `/etc` para configurações, `/boot` para arquivos de inicialização, `/dev` para dispositivos, `/tmp` para arquivos temporários e `/var/log` para logs. Para navegar, `pwd` mostra o diretório atual, `cd` muda de diretório e `cd ..` sobe para o diretório pai. Caminhos absolutos começam em `/`; caminhos relativos dependem do diretório atual.
+
+Para manipular arquivos e pastas, `ls` lista conteúdo, `mkdir` cria diretórios, `cp` copia, `mv` move ou renomeia e `rm` remove. `rm -rf` merece muito cuidado porque remove recursivamente e força a operação. Para visualizar arquivos, `cat` mostra o conteúdo, `head` as primeiras linhas, `tail` as últimas e `less` permite navegar em arquivos grandes. `locate` procura arquivos e usa uma base atualizada por `updatedb`, enquanto `grep` procura texto dentro de arquivos.
+
+`tar` serve principalmente para empacotar arquivos e pode usar compressão junto, como gzip. Em `tar -czvf`, `c` cria, `z` usa gzip, `v` mostra detalhes e `f` indica o arquivo. `wget` baixa arquivos da Internet e `wget -c` tenta continuar um download interrompido.
+
+Na parte de rede, `ifconfig` mostra e configura interfaces, podendo alterar IP, máscara ou ligar/desligar uma interface. `route` mostra rotas e `route add` adiciona novas rotas ou gateway padrão. `nmap` faz varredura de portas e mostra quais estão abertas; uma porta conhecida, como 22, sugere SSH, mas não prova sozinha qual serviço está rodando nela.
+
+Sobre as opções como `-a`, `-l`, `-r`, `-v`: algumas costumam repetir significados, como `-v` para _verbose_ e `-r` para recursivo, mas não é regra. A mesma letra pode significar coisas diferentes dependendo do comando, como `-f` ser _force_ em `rm` e ter outro significado em `tar`. Por isso, o melhor é sempre interpretar a opção no contexto do comando e consultar `man` ou `--help` quando esquecer.
