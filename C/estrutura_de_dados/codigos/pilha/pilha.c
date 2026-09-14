@@ -31,47 +31,47 @@ int esta_cheia (t_pilha *p) {
     return p->topo == p->capacidade;
 };
 
+int valor_topo(t_pilha *p) {
+    // considerando que quem chamou a funcao testou pilha vazia
+    return p->dados[p->topo-1];
+}
+
 void exibe_pilha(t_pilha *p) {
-    int i = p->topo - 1;
-    while(i > -1) {
-        printf("Elemento %d da pilha: %d\n", i, p->dados[i]);
-        i--;
+    if(esta_vazia(p)) {
+        printf("Pilha vazia\n");
+    } else {
+        int i = p->topo - 1;
+        while(i >= 0) {
+            printf("Elemento %d da pilha: %d\n", i, p->dados[i]);
+            i--;
+        }
     }
 }
 
 int extrai_elemento(t_pilha *p) {
-    if(p->topo < 2) return FRACASSO;
-    p->dados[p->topo-2] = p->dados[p->topo-1];
-    p->topo--;
-    return SUCESSO;
+    if(tamanho(p) < 2) return -1;
+    int aux, o_que_sai;
+    desempilha(p, &aux);
+    desempilha(p, &o_que_sai);
+    empilha(p, aux);
+    return o_que_sai;
+
 }
 
-int amassa_topo (t_pilha *p, int i) {
-    if(esta_vazia(p)) {
-        return empilha(p, i);
+void amassa_topo (t_pilha *p, int i) {
+    if(!esta_vazia(p) && valor_topo(p) < i) {
+        int aux;
+        desempilha(p, &aux);
     }
-    if(i > p->dados[p->topo-1]) {
-        p->dados[p->topo-1] = i;
-    } else {
-        return empilha(p, i);
-    }
-    return SUCESSO;
+    empilha(p, i);
 }
 
-int amassa_pilha(t_pilha *p, int i) {
-    int j = p->topo - 1;
-    if(esta_vazia(p)) {
-        return empilha(p, i);
+void amassa_pilha(t_pilha *p, int i) {
+    while(!esta_vazia(p) && valor_topo(p) < i) {
+        int aux;
+        desempilha(p, &aux);
     }
-    if(i > p->dados[j]) {
-        while (j >= 0 && i > p->dados[j]) {
-            p->dados[j] = i;
-            j--;
-        } 
-    } else {
-        return empilha(p, i);
-    }
-    return SUCESSO;
+    empilha(p, i);
 }
 
 int sobrecarrega_pilha(t_pilha *p, int i) {

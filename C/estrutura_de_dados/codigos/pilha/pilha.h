@@ -32,9 +32,11 @@ void exibe_pilha(t_pilha *);
 
 int extrai_elemento(t_pilha *);
 
-int amassa_topo (t_pilha *, int);
+int valor_topo(t_pilha *);
 
-int amassa_pilha(t_pilha *, int );
+void amassa_topo (t_pilha *, int);
+
+void amassa_pilha(t_pilha *, int );
 
 int sobrecarrega_pilha(t_pilha *, int );
 
