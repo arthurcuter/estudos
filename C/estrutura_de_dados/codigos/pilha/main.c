@@ -3,21 +3,24 @@
 int main () {
 
     t_pilha pilha;
-
-    constroi_pilha(10, &pilha);
-    for(int i = 0; i < 10; i++) {
-        empilha(&pilha, i);
-    }
+    constroi_pilha(5, &pilha);
     exibe_pilha(&pilha);
-    extrai_elemento(&pilha);
-    printf("===============\n");
+    empilha(&pilha, 10);
+    empilha(&pilha, 20);
+    empilha(&pilha, 30);
     exibe_pilha(&pilha);
-    printf("===============\n");
-    amassa_pilha(&pilha, 10);
+    int desempilhado;
+    desempilha(&pilha, &desempilhado);
     exibe_pilha(&pilha);
-    printf("===============\n");
-    extrai_elemento(&pilha);
-    sobrecarrega_pilha(&pilha, 7);
+    desempilhado = extrai_elemento(&pilha);
+    printf("%d estava abaixo do topo\n", desempilhado);
+    exibe_pilha(&pilha);
+    empilha(&pilha, 15);
+    empilha(&pilha, 5);
+    exibe_pilha(&pilha);
+    amassa_topo(&pilha, 10);
+    exibe_pilha(&pilha);
+    amassa_pilha(&pilha, 18);
     exibe_pilha(&pilha);
 
     return 0;

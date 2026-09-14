@@ -39,12 +39,14 @@ int valor_topo(t_pilha *p) {
 void exibe_pilha(t_pilha *p) {
     if(esta_vazia(p)) {
         printf("Pilha vazia\n");
+        printf("----------------------------------------\n");
     } else {
         int i = p->topo - 1;
         while(i >= 0) {
-            printf("Elemento %d da pilha: %d\n", i, p->dados[i]);
+            printf("Elemento %d da pilha: %d\n", i+1, p->dados[i]);
             i--;
         }
+        printf("----------------------------------------\n");
     }
 }
 
