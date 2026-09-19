@@ -1,0 +1,1 @@
+Listas de controle de acessos (ACLs) são conjuntos de regras que definem quem pode acessar tal recurso em um sistema e de que forma a pessoa pode utilizar ele.

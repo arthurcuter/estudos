@@ -1,0 +1,1 @@
+Network Attached Storage (NAS), é um armazenamento acessível pela rede, onde que, diferente do [[Storage Area Network]], que você acessa um bloco de armazenamento disponível para você, o NAS funciona mais como uma estrutura de pastas e arquivos em um armazenamento externo, parecido com um servidor de arquivos. 

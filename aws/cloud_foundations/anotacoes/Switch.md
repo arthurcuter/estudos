@@ -1,0 +1,1 @@
+Switch é o equipamento que liga vários dispositivos dentro da mesma rede local, encaminhando dados para o dispositivo correto, utilizando-se de principalmente endereços MAC.

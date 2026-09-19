@@ -1,0 +1,1 @@
+Storage Area Network (SAN) é uma rede feita exclusivamente para fornecer armazenamento a servidores. Muito utilizado em datacenters, onde não é só utilizado o armazenamento da máquina ([[Direct Attached Storage]]), mas também um armazenamento externo de alto desempenho. 

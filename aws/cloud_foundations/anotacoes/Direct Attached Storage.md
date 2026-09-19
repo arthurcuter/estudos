@@ -1,0 +1,1 @@
+Direct Attached Storage (DAS) é o dispositivo de armazenamento diretamente conectado a uma máquina. Um exemplo são SSDs, HDs, que pertencem diretamente aquela máquina. 

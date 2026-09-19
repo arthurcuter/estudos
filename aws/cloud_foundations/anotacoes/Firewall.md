@@ -1,1 +1,1 @@
-Firewall é um sistema de segurança de redes de computadores que bloqueia certos tráfegos de Internet em uma rede.  
+Firewall é um sistema de segurança de redes de computadores que bloqueia certos tráfegos em uma rede.  Pode ser software ou uma unidade hardware-software, que funciona bloqueando ou permitindo pacotes de dados de forma seletiva. 
