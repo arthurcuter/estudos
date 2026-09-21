@@ -89,6 +89,7 @@ void exibe_so_valores (t_vetor *, char *);
 int main () {
     t_vetor vetor;
     int capacidade;
+    srand (time(0));
     printf ("digite a capacidade do vetor, 0 encerra: ");
     scanf("%d", &capacidade);
     while (capacidade > 0) {
@@ -199,7 +200,6 @@ int busca_elemento (t_vetor *p_vetor, int elemento) {
     return 0;
 }
 void gera_vetor (t_vetor *p_vetor) {
-    srand (time(0));
     for (int i=0; i < p_vetor->capacidade; i++) {
         p_vetor->v[i] = rand() % (p_vetor->capacidade * 10);
     }
