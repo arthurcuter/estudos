@@ -89,19 +89,32 @@ void exibe_so_valores (t_vetor *, char *);
 int main () {
     t_vetor vetor;
     int capacidade;
+    long ini, fim;
     srand (time(0));
     printf ("digite a capacidade do vetor, 0 encerra: ");
     scanf("%d", &capacidade);
     while (capacidade > 0) {
         inicia_vetor (&vetor, capacidade);
+        //gera_vetor(&vetor);
+        //exibe_so_valores (&vetor, "primeiro vetor");
+        // ini = time(0);
+        // bubble(&vetor);
+        // fim = time(0);
+        // printf("\ncapacidade: %d\ntempo do bubble: %lds", capacidade, fim - ini);
+        //exibe_so_valores (&vetor, "primeiro vetor ordenado pelo bubble");
         gera_vetor(&vetor);
-        exibe_so_valores (&vetor, "primeiro vetor");
-        bubble(&vetor);
-        exibe_so_valores (&vetor, "primeiro vetor ordenado pelo bubble");
-        gera_vetor(&vetor);
-        exibe_so_valores(&vetor, "segundo vetor");
+        //exibe_so_valores(&vetor, "segundo vetor");
+        ini = time(0);
         quick(&vetor, 0, capacidade-1);
-        exibe_so_valores(&vetor, "segundo vetor ordenado pelo quick");
+        fim = time(0);
+        printf("\ntempo do quick: %lds\n", fim - ini);
+
+        ini = time(0);
+        quick(&vetor, 0, capacidade-1);
+        fim = time(0);
+        printf("\ntempo do quick: %lds\n", fim - ini);
+
+        //exibe_so_valores(&vetor, "segundo vetor ordenado pelo quick");
         printf("\ndigite a nova capacidade , 0 encerra: ");
         scanf("%d", &capacidade);
         
