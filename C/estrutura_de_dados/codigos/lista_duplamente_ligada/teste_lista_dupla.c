@@ -31,5 +31,14 @@ int main () {
     } else {
         printf("problemas tecnicos, tente mais tarde\n");
     }
+
+    // para o lar: desenvolver uma funcao para cada uma das tarefas: 
+    // 1. inserir um elemento numa posicao especifica. considere o primeiro como posicao 1
+    // 2. remover um elemento de uma posicao especifica. se posicao for maior que tamanho, retornar fracasso
+    // 3. remover a primeira ocorrencia de um elemento
+    // 4. calcular o tamanho da lista
+    // 5. verificar se um elemento esta na lista
+    // 6. contar o numero de ocorrencias de um elemento
+
     return 0;
 }
