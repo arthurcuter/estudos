@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste vlibras</title>
+</head>
+<body>
+  <p>Vamos testar o Widget do VLibras</p>
+  <p>Aqui vai outro teste...</p>
+
+    <!-- podemos adicionar o serviÇo do vlibra em nosso documento. para isso, basta acessar:
+     https://vlibras.gov.br/doc/widget/installation/webpageintegration.html
+    e copiar e colar o script no seu documento. é um serviço oficial do governo
+    que adiciona tradução em libras no seu site atraves de um boneco 3d -->
+
+  <!-- script Vlibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- script Vlibras -->
+</body>
+</html>

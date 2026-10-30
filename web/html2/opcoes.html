@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Opções</title>
+</head>
+
+<body>
+  <label for="estado">Estado:</label>
+  <select id="estado">
+    <!-- tambem podemos usar o select para exibir uma caixa de escolhas para o usuario, predefinida aqui -->
+    <option>São Paulo</option>
+    <option>Rio de Janeiro</option>
+    <option>Minas Gerais</option>
+    <option>Espírito Santo</option>
+    <!-- usamos option aninhado no select para adicionarmos as opcoes a caixa de escolha -->
+  </select>
+  <fieldset>
+    <legend>Escolha um veículo</legend>
+    <input id="X1" type="radio" name="veiculo">
+    <label for="X1">X1</label>
+    <input id="XC60" type="radio" name="veiculo">
+    <label for="XC60">XC60</label>
+    <input id="Q5" type="radio" name="veiculo">
+    <label for="Q5">Q5</label>
+    <input id="Discovery" type="radio" name="veiculo">
+    <label for="Discovery">Discovery</label>
+    <input id="Taycan" type="radio" name="veiculo">
+    <label for="Taycan">Taycan</label>
+  </fieldset>
+  <!-- podemos utilizar o input com o tipo radio, que cria uma bolinha q da pra marcar
+     se criarmos varios input tipo radio sem nada, serao varias bolinhas em que podemos marcar todas ao mesmo tempo
+     se colocarmos um name, a partir de agora podemos apenas clicar em uma entre todas do mesmo nome  -->
+  <!-- podemos tambem adicionar um label para rotular as opcoes, dando um id e associando ids, como nas outras
+      vezes -->
+  <!-- usamos fieldset para agrupar os elementos em uma caixa na pagina, e utilizamos o legend para 
+       adicionar uma legenda nessa caixa -->
+
+  <fieldset>
+    <legend>De quais cores você gosta?</legend>
+    <input id="vermelho" type="checkbox" name="cor">
+    <label for="vermelho">Vermelho</label>
+    <input id="amarelo" type="checkbox" name="cor">
+    <label for="amarelo">Amarelo</label>
+    <input id="preto" type="checkbox" name="cor">
+    <label for="preto">Preto</label>
+  </fieldset>
+  <!-- podemos tambem usar checkbox inves de radio para termos selecoes de multipla escolha (pode marcar 
+   mais de um quadradinho) -->
+</body>
+
+</html>

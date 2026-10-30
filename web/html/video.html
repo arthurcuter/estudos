@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Meus vídeos</title>
+  </head>
+  <body>
+    <h1>Meus vídeos</h1>
+    <p>Veja alguns vídeos que gravei.</p>
+    <video width="400" controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+        <!-- o elemento video é parecido com o audio, apenas trocando o nome
+         aqui podemos tambem adicionar width e height, como nas imagens -->
+         Seu navegador não é capaz de lidar com vídeos.
+         <!-- essa mensagem só é exibida se o video acima não for. util para navegadores que nao suportam videos -->
+    </video>
+    <iframe src="https://www.youtube.com/embed/5mF4pKSi2SU" frameborder="0"></iframe>
+    <!-- o elemento iframe permite adicionar um video do youtube a sua pagina
+     o atributo frameborder indica se queremos uma borda no video ou nao, sendo que
+     0 indica não, e 1 indica sim -->
+     <!-- para adicioner um link do youtube no iframe, geralmente o link comum vem com watch, temos que trocar
+      e adicionar embed. exemplo de link normal: https://www.youtube.com/watch?v=5mF4pKSi2SU
+      adaptado para /embed: https://www.youtube.com/embed/5mF4pKSi2SU -->
+  </body>
+</html>

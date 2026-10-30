@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Microdados</title>
+    </head>
+
+    <body>
+        <div>
+            <article itemscope itemtype="https://schema.org/Movie">
+                <h1 itemprop="name">
+                    A Star is Born
+                </h1>
+                <p itemprop="abstract">
+                    A musician helps a young singer find fame as age and alcoholism send his own career into a downward spiral.
+                </p>
+                <div>
+                    <img itemprop="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/A_Star_is_Born.png/220px-A_Star_is_Born.png" alt="A Star is Born Movie">
+                </div>
+                <footer itemprop="director" itemscope itemtype="https://schema.org/Person">
+                    Diretor: <span itemprop="name">Bradley Cooper</span>. <span itemprop="birthDate">January 5, 1975</span>
+                </footer>
+            </article>
+        </div>
+    </body>
+    <!-- esses itemprop, itemscope e itemtype utilizados seguidos de alguns parametros, sao "chaves" colocadas nos documentos
+    html para ajudar os mecanismos de buscas na recomendação de elementos do site na hora da pesquisa. utilizando os padroes do
+    schema.org, organizados pelo google, yahooo e etc, vc diz ao mecanismo de busca o que exatamente cada parte do seu documento
+    é/significa, para que ele recomende melhor quando ocorre uma busca  -->
+    <!-- podemos validar todas essas coisas com https://validator.schema.org/ -->
+    <!-- tambem da pra testar como o google lidaria com esse codigo em https://search.google.com/test/rich-results -->
+</html>

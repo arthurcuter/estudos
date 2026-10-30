@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Músicas</title>
+    </head>
+    <body>
+        <h1>Minhas músicas</h1>
+
+        <p>Ouça algumas músicas que eu gosto.</p>
+        
+        <audio controls>
+            <!-- elemento audio para adicionar um audio e atributo controls para especificar que quero um botao
+             de pause, play, volume e etc -->
+            <source src="audios/breakbeat.mp3" type="audio/mpeg">
+            <!-- elemento soruce com o atributo src para especificar onde esta o audio e o atributo type
+             para especificar ao navegador qual o tipo de audio que estamos usando, nesse caso, mpeg -->
+             <a href="audios/audio1.mp3">Aúdio 1</a>
+             <!-- utilizamos o elemento a para criar um link para o audio. isso é util para navegadores antigos
+              que nao suportem o audio em mpeg. no edge, por exemplo, isso nem sera exibido, pois o navegador
+              nao baixa todos os arquivos, ele vai baixando um a um, e ele ja baixou o primeiro. mas em navegadores
+              antigos, ele exibira apenas esse link -->
+              <!-- outra solucao para navegadores antigos era criar mais elementos sources com arquivos de audio
+               de outros tipos, tipo ogg, e ele vai baixando na ordem tambem, um por um -->
+        </audio>
+
+         <audio
+            controls
+            autoplay
+            loop
+            muted
+            src="audios/hip-hop.mp3"
+            >
+            <!-- tambem podemos simplificar, utilizando o atributo src do proprio elemento audio.
+             autoplay faz o som tocar assim que a pagina carrega
+             loop faz o audio ficar em loop
+             muted faz o audio iniciar mutado -->
+        </audio>
+    </body>
+</html>

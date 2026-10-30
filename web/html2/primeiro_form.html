@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+  </head>
+  <body>
+
+    
+    <form>
+        <!-- elemento form, usado pelo html para enviar as informacoes dentro dele para um servidor -->
+        <label
+            for="primeiroNome">
+            Primeiro nome: 
+        </label>
+        <!-- usa-se label para adicionar um "rotulo" para um input, como um texto antes de uma lugar onde o usuario vai colocar ou fazer
+         algo -->
+         <!-- usa-se o atributo for para dar o id de um input, e o texto após é o que estara no rotulo -->
+        <input id="primeiroNome" type="text">
+        <!-- elemento input, usado para criar um espaço onde sera solicitado ao usuario um tipo de coisa. 
+         usa-se o atributo id para identificar esse input e ele pode ser identificado posteriormente, como no label.
+         usa-se type para dizer o tipo daquele input, pode ser texto, cor, arquivo, email, telefone e etc,
+         extemplos abaixo -->
+         
+        <!-- também é possivel usar um label sem for, mas dai vc precisa por o input dentro do corpo do label, como no exemplo abaixo -->
+        <label> 
+            Sobrenome 
+            <input id="sobrenome" type="text">
+        </label>
+
+        <label for="email">E-mail:</label>
+        <input id="email" type="email">
+
+        <label for="telefone">Telefone:</label>
+        <input id="telefone" type="tel">
+
+        <label for="cor">Cor:</label>
+        <input id="cor" type="color">
+
+        <label for="arquivo">Arquivo:</label>
+        <input id="arquivo" type="file">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" cols="35" rows="10"></textarea>
+        <!-- textarea é usado para um campo onde um usuario vai escrever uma mensagem maior que a do texto normal,
+         normalmente uma mensagem grande ou algo assim. é possivel atribuir id, cols e rows, 
+         que sao a altura e largura da caixa -->
+
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+#titulo {
+    color: green;
+    text-align: center;
+    /* tambem podemos usar como referencia o id de um elemento
+    definimos o id no html, e passamos para o arquivo css com # + id */
+    /* text-align serve para alinhar o elemento  */
+}
+
+p#descricao {
+    color: blue;
+    /* podemos ser ainda mais especificos, utlizando o tipo do elemento + # + id */
+}
+
+p.promocao {
+    text-align: center;
+    background-color: lightgreen;
+}
+/* usamos . + nome de uma classe para dizer algo como: todos os elementos q tem essa classe/categoria
+vao ter isso ai
+podemos isso especificando tambem um elemento, da mesma forma q fizemos com o id acima.
+dai colocamos elemento + . + categoria, e todos os elementos desse tipo com essa categoria
+vao sofrer essas alteracoes */
+
+.nova {
+    color: white;
+}
+
+p.final-pagina#rodape {
+  background-color: lightgray;
+  text-align: center;
+}
+/* tambem é possivel escrever seletores que abrangem tipo, (p), classe (final-pagina), e id (rodape), 
+como no exemplo acima */
+/* seletores é o que vc utiliza para encontrar e "selecionar" quais partes do html voce quer estilizar
+em certo bloco, nesse exemplo acima, os seletores sao "p.final-pagina#rodape". text-align é a propriedade
+e center é o valor */
+
+.curso, .novo-curso {
+  background-color: aliceblue;
+    /* podemos usar , para colocar mais uma classe no seletor */
+    /* o , serve como um OU, ou seja, se a classe tiver .curso OU .novo-curso, faça isso:
+    tambem é possivel usar .curso.novo-curso, que serve com um E, dai ele vai aplicar em elementos
+    com ambas as classes, tem q ter as duas */
+}
+
+.novo-curso {
+  color: red;
+  /* tambem podemos especificar novamente esse classe para colocar uma propriedade
+  que ela tem, mas o .curso nao */
+}
+
+.curso, .novo-curso, #contato {
+  /* padding: espaço entre o conteúdo e a borda. Veremos mais sobre isso adiante */
+  padding: 12px;
+  /* estudaremos mais sobre bordas também */
+  border: 1px solid lightgray;
+}
+/* h1 {
+    color: green;
+}
+
+p {
+    color: blue;
+}
+
+/* podemos usar o elemento style tambem para alterar a cor de outros elementos.
+    nota-se que o strong tambem mudou de cor, pois os elementos filhos herdam os pais
+    algumas propriedades */
+/* nesse exemplo, usamos como referencia os tipos dos elementos */
+/* strong {
+    color: red;
+    /* mas tambem podemos especificar pro strong, dai a cor dele muda  */
+/* }   */
