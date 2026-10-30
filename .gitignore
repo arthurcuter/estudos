@@ -11,3 +11,4 @@ env/
 *.exe
 *.class
 out/
+.obsidian/
