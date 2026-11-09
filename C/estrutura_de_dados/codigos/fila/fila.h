@@ -15,4 +15,4 @@ struct no * enfileira (int, t_fila *);
 int desenfileira (int *, t_fila *);
 // a função retorna SUCESSO ou FRACASSO e o elemento volta por parâmetro referência
 
-void exibe_filha (t_fila *);
+void exibe_fila (t_fila *);
