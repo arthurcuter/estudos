@@ -25,5 +25,16 @@ int main () {
         printf("\nlista depois da remocao de fim:\n");
         exibe_lista(&lista);
     }
+
+    insere_fim(1210, &lista);
+
+    printf("\n%d\n", conta_ocorrencias(10, &lista));
+    insere_inicio(1213212, &lista);
+    exibe_lista(&lista);
+    int maior;
+    maior_elemento(&lista, &maior);
+    printf("\n%d\n", maior);
+
+    
     return 0;
 }

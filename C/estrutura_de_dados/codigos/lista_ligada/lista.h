@@ -1,5 +1,8 @@
 #include "no.h"
 
+#define SUCESSO 1
+#define FRACASSO 0
+
 typedef struct lista {
     struct no *primeiro;
     int tamanho;
@@ -12,3 +15,7 @@ void exibe_lista (t_lista *);
 int remove_inicio (t_lista *);
 void insere_fim (int, t_lista *);
 int remove_fim (t_lista *);
+int busca (int, t_lista *); 
+int conta_ocorrencias (int, t_lista *);
+int maior_elemento (t_lista *, int *);  
+void insere_ordenado (int, t_lista *);

@@ -66,3 +66,49 @@ int remove_fim (t_lista *lista) {
     lista->tamanho--;
     return aux;
 }
+
+int busca (int x, t_lista *lista) {
+    if(lista_vazia(lista)) return FRACASSO;
+    struct no * percorre = lista->primeiro;
+    int posicao = 0;
+    int achou = -1;
+    while (percorre != NULL) {
+        if(percorre->info == x) {
+            achou = posicao;
+            return achou;
+        }
+        percorre = percorre->prox;
+        posicao++;
+    }
+    return achou;
+} 
+
+int conta_ocorrencias (int x, t_lista *lista) {
+    if(lista_vazia(lista)) return 0;
+    struct no * percorre = lista->primeiro;
+    int ocorrencias = 0;
+    while (percorre != NULL) {
+        if(percorre->info == x) {
+            ocorrencias++;
+        }
+        percorre = percorre->prox;
+    }
+    return ocorrencias;
+}
+
+int maior_elemento (t_lista *lista, int *maior) {
+    if(lista_vazia(lista)) return FRACASSO;
+    struct no * percorre = lista->primeiro->prox;
+    *maior = lista->primeiro->info;
+    while (percorre != NULL) {
+        if(percorre->info > *maior) {
+            *maior = percorre->info;
+        }
+        percorre = percorre->prox;
+    }
+    return SUCESSO;
+}
+
+void insere_ordenado (int i, t_lista *lista) {
+    // fazer
+}
