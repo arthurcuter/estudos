@@ -132,3 +132,32 @@ void ordena_lista (t_lista *origem, t_lista *destino) {
     origem->primeiro = NULL;
     origem->tamanho = 0;
 }
+
+int remove_inicio_suc_frac (t_lista *lista, int *p_int) {
+    if(lista_vazia(lista)) return FRACASSO;
+    *p_int = lista->primeiro->info;
+    struct no * aux_primeiro = lista->primeiro;
+    lista->primeiro = lista->primeiro->prox;
+    free(aux_primeiro);
+    lista->tamanho--;
+    return SUCESSO;
+}
+
+int remove_fim_suc_frac (t_lista *lista, int *p_int) {
+    if(lista_vazia(lista)) return FRACASSO;
+    if(lista->tamanho == 1) { // tem um elemento so
+        *p_int = lista->primeiro->info;
+        free(lista->primeiro);
+        lista->primeiro = NULL;
+    } else {
+        struct no * percorre = lista->primeiro;
+        while(percorre->prox->prox != NULL) {
+            percorre = percorre->prox;
+        }
+        *p_int = percorre->prox->info;
+        free(percorre->prox);
+        percorre->prox = NULL;
+    }
+    lista->tamanho--;
+    return SUCESSO;
+}

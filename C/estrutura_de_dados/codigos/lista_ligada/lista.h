@@ -20,3 +20,5 @@ int conta_ocorrencias (int, t_lista *);
 int maior_elemento (t_lista *, int *);  
 void insere_ordenado (int, t_lista *);
 void ordena_lista (t_lista *, t_lista *);
+int remove_inicio_suc_frac (t_lista *, int *);
+int remove_fim_suc_frac (t_lista *, int *);
