@@ -19,3 +19,4 @@ int busca (int, t_lista *);
 int conta_ocorrencias (int, t_lista *);
 int maior_elemento (t_lista *, int *);  
 void insere_ordenado (int, t_lista *);
+void ordena_lista (t_lista *, t_lista *);

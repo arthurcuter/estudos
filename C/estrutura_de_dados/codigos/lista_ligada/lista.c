@@ -120,3 +120,15 @@ void insere_ordenado (int i, t_lista *lista) {
         lista->tamanho++;   
     }
 }
+
+void ordena_lista (t_lista *origem, t_lista *destino) {
+    struct no * percorre = origem->primeiro;
+    while (percorre != NULL) {
+        insere_ordenado(percorre->info, destino);
+        struct no * aux_no = percorre;
+        percorre = percorre->prox;
+        free(aux_no);
+    }
+    origem->primeiro = NULL;
+    origem->tamanho = 0;
+}
